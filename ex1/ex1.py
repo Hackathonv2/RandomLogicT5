@@ -14,4 +14,4 @@ if __name__ == "__main__":
         else:
             power -= 1
     sys.stdin.close()
-    print(power)
+    print(int(power))

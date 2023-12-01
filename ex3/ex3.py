@@ -25,7 +25,8 @@ if __name__ == "__main__":
         if lines[i][0] in nodes.keys():
             nodes[lines[i][0]].append(lines[i][1])
         else:
-            nodes[lines[i][0]] = list(lines[i][1])
+            nodes[lines[i][0]] = list()
+            nodes[lines[i][0]].append(int(lines[i][1]))
     print(nodes)
     weight_nodes = get_weight_tree(nodes)
     max_node = 0

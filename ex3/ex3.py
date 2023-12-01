@@ -27,7 +27,6 @@ if __name__ == "__main__":
         else:
             nodes[lines[i][0]] = list()
             nodes[lines[i][0]].append(int(lines[i][1]))
-    print(nodes)
     weight_nodes = get_weight_tree(nodes)
     max_node = 0
     best_node = None
